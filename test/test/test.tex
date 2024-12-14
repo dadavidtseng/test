@@ -1,0 +1,261 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks = true,
+    linkcolor = red,
+    urlcolor  = blue,
+    citecolor = blue,
+    anchorcolor = blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\newfontfamily{\SansTC}[
+    Path = Fonts/NotoSansTC/,
+    Extension = .otf,
+    BoldFont = NotoSansCJKtc-Bold.otf,
+]{NotoSansCJKtc-Regular.otf}
+
+\newfontfamily{\SerifTC}[
+    Path = Fonts/NotoSerifTC/,
+    Extension = .otf,
+    BoldFont = NotoSerifTC-Bold.otf,
+]{NotoSerifTC-Regular.otf}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+            {#1 #2 #3 #4 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+\begin{center}
+{\Huge Yu-Wei Tseng} \\ \vspace{1pt}
+\small
+\faHouseUser\ No. 669 Zhongzheng West Road, Zhubei City, Hsinchu County, Taiwan R.O.C. \\ \vspace{1pt}
+\raisebox{-0.1\height}\faPhone\ +886-972-913-737 ~
+\href{mailto:dadavidtseng@gmail.com}{\faEnvelope\ dadavidtseng@gmail.com} ~
+\href{https://linkedin.com/in/dadavidtseng}{\faLinkedin\ dadavidtseng}  ~
+\href{https://github.com/dadavidtseng}{\faGithub\ dadavidtseng}
+\vspace{-8pt}
+\end{center}
+
+% adjust vscape based on the space you want to leave between each section.
+
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experiences}
+\resumeSubHeadingListStart
+\resumeSubheading
+{\href{https://www.ctrls1890.com/}{CtrlS Ltd.}}{Nov 2023 -- Present}{Junior Game Programmer}{Tainan, Taiwan}
+\resumeItemListStart
+\resumeItem {Crafting applications with Unity Engine}
+\resumeItem {Enabling the perusal of 360-degree AR streaming videos on mobile devices.}
+\resumeItem {Leveraging UniRx facilitates the seamless handling of asynchronous operations and events.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\href{https://www.tap-arch.tw//en}
+{Team Architects Partnership}}{Nov 2021 -- Feb 2022}
+{Architectural Design Intern}{Tainan, Taiwan}
+\resumeItemListStart
+\resumeItem {Strategized and managed construction budget inventory.}
+\resumeItem {Crafted intricate architectural models for project exhibitions.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\href{https://www.urbanwasabi.com.tw/}
+{UrbanWasabi}}{Sep 2021 -- Nov 2021}
+{Architectural Design Intern}{Tainan, Taiwan}
+\resumeItemListStart
+\resumeItem {Produced meticulous measured drawings for an imminent renovation project.}
+\resumeItem {Spearheaded the creation of introduction videos, posters, and booklets for exhibitions.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\href{https://www.nckudc.com.tw/}
+{NCKU Design Center}}{Jul 2021 -- Aug 2021}
+{Creative Project Designer}{Tainan, Taiwan}
+\resumeItemListStart
+\resumeItem {Devised captivating graphic designs for NCKU's 90th-anniversary folder.}
+\resumeItem {Efficiently managed the entire design-to-production workflow.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-6pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{\href{https://dadavidtseng.info/gamedev0003_cutthecube/}{Cut The Cube}} $|$ \emph{Unity $|$
+\href{https://github.com/dadavidtseng/CutTheCube}{Git}}}{Aug 2023}
+\resumeItemListStart
+\resumeItem{ Engineered the 3D mesh cutting functionality.}
+\resumeItem{ Established and fine-tuned the game's balance system.}
+\resumeItemListEnd
+
+\vspace{-12pt}
+
+\resumeProjectHeading
+{\textbf{\href{https://dadavidtseng.info/gamedev0002_trashure/}{Trashure}} $|$ \emph{Unity, Adobe Photoshop $|$ \href{https://github.com/dadavidtseng/Trashure_V3}{Git}}}{Jul 2022 -- May 2023}
+\resumeItemListStart
+\resumeItem{ Devised a methodology for the reinterpretation of images from field surveys.}
+\resumeItem{ Pioneered the project's structure by fusing environmental themes, image media, and digital gaming.}
+\resumeItemListEnd
+
+\vspace{-12pt}
+
+\resumeProjectHeading
+{\textbf{\href{https://dadavidtseng.info/gamedev0001_petaverse/}{Petaverse}} $|$ \emph{Unity, Vuforia, Adobe Premiere $|$ \href{https://github.com/dadavidtseng/Petaverse}{Git}}}
+{Oct 2022 -- Dec 2022}
+\resumeItemListStart
+\resumeItem{ Developed a commercial application model, integrating augmented reality (AR) scanning capabilities.}
+\resumeItem{ Spearheaded the creation of a digital pet development system.}
+\resumeItemListEnd
+
+\vspace{-12pt}
+
+\resumeProjectHeading
+{\textbf{\href{https://dadavidtseng.info/architecture0003_trashcandowhat/}{Trash Can Do What}} $|$ \emph{Processing $|$ \href{https://github.com/dadavidtseng/TrashCanDoWhat}{Git}}}{Mar 2022 -- Apr 2022}
+\resumeItemListStart
+\resumeItem{ Compiled data from daily trash to establish a comprehensive repository.}
+\resumeItem{ Visualized and crafted an interactive user interface for data exploration.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Honors and Awards}
+\vspace{-6pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Green Hackathon Creative Selection}}{Aug 2023}
+\resumeItemListStart
+\resumeItem{Best Five}
+\resumeItemListEnd
+\vspace{-12pt}
+\resumeProjectHeading
+{\textbf{9th Wuhan Golden and Silver Cup Innovation and Entreprenurship Competition}}{Aug 2023}
+\resumeItemListStart
+\resumeItem{Preliminary selection}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------Technical Skilss-----------
+\section{Skills and Languages}
+\textbf{Programming Languages}{: Python, C, C\#, LaTex, SQL} \\
+\textbf{Web Technologies}{: HTML, CSS, JavaScript} \\
+\textbf{Software Tools}{: Unity, Blender, Rhino, Git, Adobe, Office}\\
+\textbf{Languages}{: Mandarin(native), English(fluent, TOEIC 895, TOEFL 97, GRE 315), French(beginner)}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{National Cheng Kung University, Tainan, Taiwan}{Sep 2017 -- Jun 2023}
+{Bachelor of Architecture}{GPA: 3.17/4}
+%leave a line after this
+
+\small{\textbf{Game-related Coursework: Digital Design in Creative Industries, Program Design(1), The Integration of Ar/vr for Interaction Design, Design Computation and Computational Geometry}}
+\resumeSubHeadingListEnd
+
+
+
+% adjust vscape based on the space you want to leave between each section.
+\end{document}
